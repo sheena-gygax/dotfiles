@@ -1,7 +1,7 @@
 ## Install
-use [Homesick](https://github.com/technicalpickles/homesick)
-Clone this repo to ~/.homesick `homesick clone git@github.com:levibrown/dotfiles.git`
-Symlink files to home directory `homesick symlink dotfiles`
+Use [Homesick](https://github.com/technicalpickles/homesick)
 
-Setup Vundle `cd ~/.vim/bundles/ && git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle` 
-Open vim `vim` then run `:BundleInstall` 
+1. Clone this repo to ~/.homesick `homesick clone git@github.com:levibrown/dotfiles.git`
+2. Symlink files to home directory `homesick symlink dotfiles
+3. Setup Vundle `cd ~/.vim/bundles/ && git clone https://github.com/gmarik/vundle.git ~.vim/bundle/vundle` 
+4. Open vim `vim` then run `:BundleInstall` 
