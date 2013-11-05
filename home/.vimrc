@@ -41,7 +41,7 @@ let maplocalleader=","
 set clipboard=unnamed         " mvim use clipboard
 set complete=.,t              " auto-complete use tags and open file
 
-nnoremap - :Switch<cr>        " Switch/Cycle various command i.e ERB tags
+nnoremap - :Switch<cr>
 nmap <leader>tb :TagbarToggle<CR>   " Toggle Tagbar
 
 " Splits
@@ -120,7 +120,7 @@ function! AdjustWindowHeight(minheight, maxheight)
   let n_lines = 0
   let w_width = winwidth(0)
   while l <= line('$')
-      " number to float for division
+  " number to float for division
       let l_len = strlen(getline(l)) + 0.0
       let line_width = l_len/w_width
       let n_lines += float2nr(ceil(line_width))
@@ -131,7 +131,7 @@ endfunction
 
 " Nerdtree
 let g:NERDTreeWinSize = 40
-map <leader>n :NERDTreeToggle /Users/levibrown/g5 <CR>
+map <leader>n :NERDTreeToggle /Users/sheenagygax/g5 <CR>
 map <leader><leader>n :NERDTreeFind <CR>
 
 let NERDTreeQuitOnOpen=1    "close nerdtree after file opened
@@ -168,3 +168,4 @@ autocmd FileType ruby imap <buffer> <leader>r <Plug>(seeing_is_believing-run_-x)
 autocmd FileType ruby nmap <buffer> <leader><leader>r <Plug>(seeing_is_believing-run)
 autocmd FileType ruby xmap <buffer> <leader><leader>r <Plug>(seeing_is_believing-run)
 autocmd FileType ruby imap <buffer> <leader><leader>r <Plug>(seeing_is_believing-run)
+
